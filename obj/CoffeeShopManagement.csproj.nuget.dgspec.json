@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\csProject\\CoffeeShopManagement\\CoffeeShopManagement.csproj": {}
+    "C:\\Users\\Aur\\Documents\\CoffeeShopManagement\\CoffeeShopManagement.csproj": {}
   },
   "projects": {
-    "E:\\csProject\\CoffeeShopManagement\\CoffeeShopManagement.csproj": {
+    "C:\\Users\\Aur\\Documents\\CoffeeShopManagement\\CoffeeShopManagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\csProject\\CoffeeShopManagement\\CoffeeShopManagement.csproj",
+        "projectUniqueName": "C:\\Users\\Aur\\Documents\\CoffeeShopManagement\\CoffeeShopManagement.csproj",
         "projectName": "CoffeeShopManagement",
-        "projectPath": "E:\\csProject\\CoffeeShopManagement\\CoffeeShopManagement.csproj",
-        "packagesPath": "C:\\Users\\HTC\\.nuget\\packages\\",
-        "outputPath": "E:\\csProject\\CoffeeShopManagement\\obj\\",
+        "projectPath": "C:\\Users\\Aur\\Documents\\CoffeeShopManagement\\CoffeeShopManagement.csproj",
+        "packagesPath": "C:\\Users\\Aur\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Aur\\Documents\\CoffeeShopManagement\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\HTC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Aur\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

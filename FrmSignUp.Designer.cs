@@ -29,24 +29,24 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.tbUser = new System.Windows.Forms.TextBox();
+            this.txtUser = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.tbPhone = new System.Windows.Forms.TextBox();
-            this.tbAddress = new System.Windows.Forms.TextBox();
-            this.tbDob = new System.Windows.Forms.TextBox();
-            this.tbFullName = new System.Windows.Forms.TextBox();
-            this.tbPass = new System.Windows.Forms.TextBox();
+            this.txtAddress = new System.Windows.Forms.TextBox();
+            this.txtFullName = new System.Windows.Forms.TextBox();
+            this.txtPass = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.tbRePass = new System.Windows.Forms.TextBox();
+            this.txtRePass = new System.Windows.Forms.TextBox();
             this.btnSignUp = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.rbMale = new System.Windows.Forms.RadioButton();
             this.rbFemale = new System.Windows.Forms.RadioButton();
             this.btnBack = new System.Windows.Forms.Button();
+            this.txtPhone = new System.Windows.Forms.MaskedTextBox();
+            this.txtDateOfBirth = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -58,12 +58,12 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "User Name";
             // 
-            // tbUser
+            // txtUser
             // 
-            this.tbUser.Location = new System.Drawing.Point(162, 26);
-            this.tbUser.Name = "tbUser";
-            this.tbUser.Size = new System.Drawing.Size(215, 29);
-            this.tbUser.TabIndex = 1;
+            this.txtUser.Location = new System.Drawing.Point(162, 26);
+            this.txtUser.Name = "txtUser";
+            this.txtUser.Size = new System.Drawing.Size(215, 29);
+            this.txtUser.TabIndex = 1;
             // 
             // label2
             // 
@@ -101,41 +101,27 @@
             this.label5.TabIndex = 5;
             this.label5.Text = "Address";
             // 
-            // tbPhone
+            // txtAddress
             // 
-            this.tbPhone.Location = new System.Drawing.Point(160, 234);
-            this.tbPhone.Name = "tbPhone";
-            this.tbPhone.Size = new System.Drawing.Size(215, 29);
-            this.tbPhone.TabIndex = 6;
+            this.txtAddress.Location = new System.Drawing.Point(160, 292);
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(215, 29);
+            this.txtAddress.TabIndex = 7;
             // 
-            // tbAddress
+            // txtFullName
             // 
-            this.tbAddress.Location = new System.Drawing.Point(160, 292);
-            this.tbAddress.Name = "tbAddress";
-            this.tbAddress.Size = new System.Drawing.Size(215, 29);
-            this.tbAddress.TabIndex = 7;
+            this.txtFullName.Location = new System.Drawing.Point(162, 82);
+            this.txtFullName.Name = "txtFullName";
+            this.txtFullName.Size = new System.Drawing.Size(215, 29);
+            this.txtFullName.TabIndex = 9;
             // 
-            // tbDob
+            // txtPass
             // 
-            this.tbDob.Location = new System.Drawing.Point(162, 139);
-            this.tbDob.Name = "tbDob";
-            this.tbDob.Size = new System.Drawing.Size(215, 29);
-            this.tbDob.TabIndex = 8;
-            // 
-            // tbFullName
-            // 
-            this.tbFullName.Location = new System.Drawing.Point(162, 82);
-            this.tbFullName.Name = "tbFullName";
-            this.tbFullName.Size = new System.Drawing.Size(215, 29);
-            this.tbFullName.TabIndex = 9;
-            // 
-            // tbPass
-            // 
-            this.tbPass.Location = new System.Drawing.Point(160, 350);
-            this.tbPass.Name = "tbPass";
-            this.tbPass.Size = new System.Drawing.Size(215, 29);
-            this.tbPass.TabIndex = 10;
-            this.tbPass.UseSystemPasswordChar = true;
+            this.txtPass.Location = new System.Drawing.Point(160, 350);
+            this.txtPass.Name = "txtPass";
+            this.txtPass.Size = new System.Drawing.Size(215, 29);
+            this.txtPass.TabIndex = 10;
+            this.txtPass.UseSystemPasswordChar = true;
             // 
             // label6
             // 
@@ -155,13 +141,13 @@
             this.label7.TabIndex = 12;
             this.label7.Text = "Re-Password";
             // 
-            // tbRePass
+            // txtRePass
             // 
-            this.tbRePass.Location = new System.Drawing.Point(160, 406);
-            this.tbRePass.Name = "tbRePass";
-            this.tbRePass.Size = new System.Drawing.Size(215, 29);
-            this.tbRePass.TabIndex = 13;
-            this.tbRePass.UseSystemPasswordChar = true;
+            this.txtRePass.Location = new System.Drawing.Point(160, 406);
+            this.txtRePass.Name = "txtRePass";
+            this.txtRePass.Size = new System.Drawing.Size(215, 29);
+            this.txtRePass.TabIndex = 13;
+            this.txtRePass.UseSystemPasswordChar = true;
             // 
             // btnSignUp
             // 
@@ -171,6 +157,7 @@
             this.btnSignUp.TabIndex = 14;
             this.btnSignUp.Text = "Sign Up";
             this.btnSignUp.UseVisualStyleBackColor = true;
+            this.btnSignUp.Click += new System.EventHandler(this.btnSignUp_Click);
             // 
             // label8
             // 
@@ -213,29 +200,46 @@
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
+            // txtPhone
+            // 
+            this.txtPhone.Location = new System.Drawing.Point(162, 234);
+            this.txtPhone.Mask = "00000000000";
+            this.txtPhone.Name = "txtPhone";
+            this.txtPhone.Size = new System.Drawing.Size(215, 29);
+            this.txtPhone.TabIndex = 19;
+            // 
+            // txtDateOfBirth
+            // 
+            this.txtDateOfBirth.Location = new System.Drawing.Point(160, 139);
+            this.txtDateOfBirth.Mask = "00/00/0000";
+            this.txtDateOfBirth.Name = "txtDateOfBirth";
+            this.txtDateOfBirth.Size = new System.Drawing.Size(217, 29);
+            this.txtDateOfBirth.TabIndex = 20;
+            this.txtDateOfBirth.ValidatingType = typeof(System.DateTime);
+            // 
             // FrmSignUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(427, 525);
+            this.Controls.Add(this.txtDateOfBirth);
+            this.Controls.Add(this.txtPhone);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.rbFemale);
             this.Controls.Add(this.rbMale);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btnSignUp);
-            this.Controls.Add(this.tbRePass);
+            this.Controls.Add(this.txtRePass);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.tbPass);
-            this.Controls.Add(this.tbFullName);
-            this.Controls.Add(this.tbDob);
-            this.Controls.Add(this.tbAddress);
-            this.Controls.Add(this.tbPhone);
+            this.Controls.Add(this.txtPass);
+            this.Controls.Add(this.txtFullName);
+            this.Controls.Add(this.txtAddress);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.tbUser);
+            this.Controls.Add(this.txtUser);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Name = "FrmSignUp";
@@ -249,23 +253,23 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox tbUser;
+        private System.Windows.Forms.TextBox txtUser;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox tbPhone;
-        private System.Windows.Forms.TextBox tbAddress;
-        private System.Windows.Forms.TextBox tbDob;
-        private System.Windows.Forms.TextBox tbFullName;
-        private System.Windows.Forms.TextBox tbPass;
+        private System.Windows.Forms.TextBox txtAddress;
+        private System.Windows.Forms.TextBox txtFullName;
+        private System.Windows.Forms.TextBox txtPass;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox tbRePass;
+        private System.Windows.Forms.TextBox txtRePass;
         private System.Windows.Forms.Button btnSignUp;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.RadioButton rbMale;
         private System.Windows.Forms.RadioButton rbFemale;
         private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.MaskedTextBox txtPhone;
+        private System.Windows.Forms.MaskedTextBox txtDateOfBirth;
     }
 }

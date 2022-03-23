@@ -2579,19 +2579,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Aur\\.nuget\\packages\\": {}
+    "C:\\Users\\HTC\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Aur\\Documents\\CoffeeShopManagement\\CoffeeShopManagement.csproj",
+      "projectUniqueName": "E:\\csProject\\CoffeeShopManagement\\CoffeeShopManagement.csproj",
       "projectName": "CoffeeShopManagement",
-      "projectPath": "C:\\Users\\Aur\\Documents\\CoffeeShopManagement\\CoffeeShopManagement.csproj",
-      "packagesPath": "C:\\Users\\Aur\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Aur\\Documents\\CoffeeShopManagement\\obj\\",
+      "projectPath": "E:\\csProject\\CoffeeShopManagement\\CoffeeShopManagement.csproj",
+      "packagesPath": "C:\\Users\\HTC\\.nuget\\packages\\",
+      "outputPath": "E:\\csProject\\CoffeeShopManagement\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Aur\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\HTC\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

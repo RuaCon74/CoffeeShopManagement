@@ -30,8 +30,8 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtUserName = new System.Windows.Forms.TextBox();
-            this.txtPass = new System.Windows.Forms.TextBox();
+            this.tbUserName = new System.Windows.Forms.TextBox();
+            this.tbPass = new System.Windows.Forms.TextBox();
             this.btnSignUp = new System.Windows.Forms.Button();
             this.btnLogin = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
@@ -55,20 +55,20 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Password";
             // 
-            // txtUserName
+            // tbUserName
             // 
-            this.txtUserName.Location = new System.Drawing.Point(189, 43);
-            this.txtUserName.Name = "txtUserName";
-            this.txtUserName.Size = new System.Drawing.Size(236, 29);
-            this.txtUserName.TabIndex = 2;
+            this.tbUserName.Location = new System.Drawing.Point(189, 43);
+            this.tbUserName.Name = "tbUserName";
+            this.tbUserName.Size = new System.Drawing.Size(236, 29);
+            this.tbUserName.TabIndex = 2;
             // 
-            // txtPass
+            // tbPass
             // 
-            this.txtPass.Location = new System.Drawing.Point(189, 108);
-            this.txtPass.Name = "txtPass";
-            this.txtPass.Size = new System.Drawing.Size(236, 29);
-            this.txtPass.TabIndex = 3;
-            this.txtPass.UseSystemPasswordChar = true;
+            this.tbPass.Location = new System.Drawing.Point(189, 108);
+            this.tbPass.Name = "tbPass";
+            this.tbPass.Size = new System.Drawing.Size(236, 29);
+            this.tbPass.TabIndex = 3;
+            this.tbPass.UseSystemPasswordChar = true;
             // 
             // btnSignUp
             // 
@@ -89,7 +89,6 @@
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
-            
             // 
             // btnExit
             // 
@@ -109,8 +108,8 @@
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.btnSignUp);
-            this.Controls.Add(this.txtPass);
-            this.Controls.Add(this.txtUserName);
+            this.Controls.Add(this.tbPass);
+            this.Controls.Add(this.tbUserName);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -126,8 +125,8 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtUserName;
-        private System.Windows.Forms.TextBox txtPass;
+        private System.Windows.Forms.TextBox tbUserName;
+        private System.Windows.Forms.TextBox tbPass;
         private System.Windows.Forms.Button btnSignUp;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Button btnExit;

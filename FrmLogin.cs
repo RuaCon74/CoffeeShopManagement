@@ -1,6 +1,11 @@
-﻿using CoffeeShopManagement.DAL;
-using CoffeeShopManagement.Models;
-using System;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CoffeeShopManagement
@@ -25,33 +30,12 @@ namespace CoffeeShopManagement
             this.Close();
         }
 
-        bool Login(string username, string pass)
-        {
-            
-            LoginDAL dal = new LoginDAL();
-            Account acc = dal.Login(username, pass);
-            if(acc != null)
-            {
-                return true;
-            }
-            return false;
-        }
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (Login(txtUserName.Text.Trim(), txtPass.Text.Trim()) != false)
-            {
-                this.Hide();
-                FrmMain frmMain = new FrmMain();
-                frmMain.ShowDialog();
-                this.Close();
-            }
-            else
-            {
-                MessageBox.Show("Wrong username or password!");
-            }
-
+            this.Hide();
+            FrmMain frmMain = new FrmMain();
+            frmMain.ShowDialog();
+            this.Close();
         }
-
-        
     }
 }
